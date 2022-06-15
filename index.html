@@ -3,13 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Web Keyboard</title>
+        <title>Web Keyboard and Lyre</title>
         <link rel="stylesheet" href="assets/css/app.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body class="py-5">
+        <div class="text-center">
+            <select class="form-control w-56" id="instrument">
+                <option value="Piano">Piano</option>
+                <option value="Lyre">Lyre</option>
+            </select>
+        </div>
         <div class="flex flex-col lg:flex-row items-center justify-center h-screen text-center lg:text-left">
-            <div class="container">
+            <div class="container" id="piano">
                 <div class="flex row justify-center mb-3">
                     <button class="btn btn-outline text-white mr-3" id="keyboard-note-q">Q</button>
                     <button class="btn btn-outline text-white mr-3" id="keyboard-note-w">W</button>
@@ -29,6 +35,35 @@
                     <button class="btn btn-outline text-white mr-3" id="keyboard-note-h">H</button>
                     <button class="btn btn-outline text-white mr-3" id="keyboard-note-j">J</button>
                     <button class="btn btn-outline text-white mr-3" id="keyboard-note-k">K</button>
+                </div>
+            </div>
+            <div class="container hidden" id="lyre">
+                <div class="flex row justify-center mb-3">
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-q">Q</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-w">W</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-e">E</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-r">R</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-t">T</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-y">Y</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-u">U</button>
+                </div>
+                <div class="flex row justify-center mb-3">
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-a">A</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-s">S</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-d">D</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-f">F</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-g">G</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-h">H</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-j">J</button>
+                </div>
+                <div class="flex row justify-center mb-3">
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-z">Z</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-x">X</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-c">C</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-v">V</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-b">B</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-n">N</button>
+                    <button class="btn btn-outline text-white mr-3" id="keyboard-note-m">M</button>
                 </div>
             </div>
         </div>
